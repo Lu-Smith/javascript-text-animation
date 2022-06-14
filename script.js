@@ -30,7 +30,7 @@ class Particle {
     this.size = 3;
     this.baseX = this.x;
     this.baseY = this.y;
-    this.density = Math.random() * 30 + 1;
+    this.density = Math.random() * 40 + 1;
   }
 
   draw() {
@@ -53,7 +53,7 @@ class Particle {
 
 function init() {
   particleArray = [];
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 700; i++) {
     let x = Math.random() * canvas.width;
     let y = Math.random() * canvas.height;
     particleArray.push(new Particle(x, y));
